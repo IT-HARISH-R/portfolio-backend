@@ -3,7 +3,7 @@ import cors from 'cors'
 import contactRoutes from './routes/contactRoutes.js';
 import { URL } from './utlis/config.js';
 
-const url = URL ? url : 'http://localhost:5173'
+const url = URL ? URL : 'http://localhost:5173'
 console.log(url)
 const app = express();
 
