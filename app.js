@@ -11,9 +11,7 @@ app.use(express.json());
 app.use(cors(
     {
         origin: url,
-        // origin: 'https://gptv.netlify.app',
         credentials: true,
-        // methods: ['GET', 'POST', 'PATCH', 'DELETE', "PUT"],
     }
 ))
 
