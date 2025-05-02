@@ -19,6 +19,10 @@ app.use(cors(
 
 app.use('/api/contact', contactRoutes);
 
+app.use('/hello', async (req, res) => {
+    res.json({ message: 'Hello' })
+})
+
 // app.use(errorPage); 
 
 export default app
