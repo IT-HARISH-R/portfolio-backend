@@ -2,6 +2,7 @@ import express from 'express'
 import cors from 'cors'
 import contactRoutes from './routes/contactRoutes.js';
 import { URL } from './utlis/config.js';
+import { chatRoute } from './routes/chatRoute.js';
 
 const url = URL ? URL : 'http://localhost:5173'
 console.log(url)
@@ -18,6 +19,7 @@ app.use(cors(
 // app.use(cookieParser())
 
 app.use('/api/contact', contactRoutes);
+app.use('/api', chatRoute);
 
 app.use('/hello', async (req, res) => {
     res.json({ message: 'Hello' })
