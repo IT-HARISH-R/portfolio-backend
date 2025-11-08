@@ -9,7 +9,7 @@ console.log(url)
 const app = express();
 
 app.use(express.json());
-app.use(cors(
+app.use(cors( 
     {
         origin: url,
         credentials: true,
